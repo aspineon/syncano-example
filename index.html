@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Syncano Playground 🚀</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="app.css" rel="stylesheet" />
+  <script src="https://unpkg.com/@syncano/client@latest/dist/syncano-client.min.js"></script>
+</head>
+
+<body>
+  <div class="logo__container">
+    <img src="logo.png" class="logo" alt="Syncano" />
+  </div>
+  <div class="wrapper">
+    <div class="flipper">
+      <form class="form">
+        <div class="form__content">
+          <input type="text" class="firstname--js" name="firstname" placeholder="First name" />
+          <input type="text" class="lastname--js" name="lastname" placeholder="Last name" />
+          <button class="submit submit--js">CALL YOUR SOCKET!</button>
+        </div>
+      </form>
+
+      <div class="response response--visible ">
+        <p>Socket responsed: <br/>
+          <span class="response__content response__content--js"></span>
+        </p>
+        <div>You're ready to go, now it's time to build something awesome!
+          <div class="response__links">
+            <a href="#">DOCS</a> <a href="#">TUTORIALS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

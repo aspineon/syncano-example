@@ -64,8 +64,9 @@ body {
   justify-content: center;
   overflow: hidden;
   margin-bottom: -50px;
-  z-index: 2;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.37);
+  z-index: 10;
+  position: relative;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.37);
 }
 
 .loading .logo {
@@ -83,14 +84,16 @@ body {
 }
 
 .form {
-	z-index: 2;
-	transform: rotateY(0deg);
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
+  z-index: 2;
+  transform: rotateY(0deg);
+  background: #d8d8eb;
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   min-height: 178px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 input {
@@ -122,16 +125,18 @@ button {
 }
 
 .response {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-	transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
   min-height: 178px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  background: #d8d8eb;
 }
 
 .response__content {
@@ -171,8 +176,10 @@ button {
   width: 300px;
   height: 256px;
   perspective: 1000px;
-  background: rgba(255, 255, 255, 0.8);
+  background: #d8d8eb;
   padding: 60px 16px 16px;
   border-radius: 8px;
-  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.37);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.37);
 }

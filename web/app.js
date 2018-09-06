@@ -1,5 +1,5 @@
 //initialising syncano client
-var s = new SyncanoClient('silent-flower-7664');
+var s = new SyncanoClient('old-cloud-9538');
 
 var button = document.querySelector('.submit--js');
 

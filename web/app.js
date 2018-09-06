@@ -1,5 +1,5 @@
 //initialising syncano client
-var s = new SyncanoClient('old-cloud-9538');
+var s = new SyncanoClient('INSTANCE_NAME');
 
 var button = document.querySelector('.submit--js');
 
